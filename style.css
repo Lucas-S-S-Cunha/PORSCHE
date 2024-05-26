@@ -22,8 +22,8 @@ body {
 .fundo {
   z-index: -2;
   display: flex;
-  min-width: 100vw;
-  min-height: auto;
+  width: 100vw;
+  height: auto;
   top: 0;
   position: fixed;
 }
@@ -110,8 +110,43 @@ body {
   display: flex;
   width: 410px;
   height: auto;
-  margin-left: 840px;
-  margin-top: 230px;
+  margin-left: 1120px;
+  margin-top: 290px;
   position: absolute;
   z-index: 4;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background: #000000;
+  }
+  .TCS {
+    color: #ffffff;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+  }
+  .GT4 {
+    left: 120px;
+  }
+  .fundo {
+    max-width: 900px;
+    height: auto;
+  }
+  .mask {
+    width: auto;
+    height: auto;
+  }
+  .circulo {
+    bottom: 0;
+    right: 0;
+  }
+  .porsche {
+    width: 90px;
+    height: auto;
+  }
+  .paragraph {
+    display: none;
+  }
 }
